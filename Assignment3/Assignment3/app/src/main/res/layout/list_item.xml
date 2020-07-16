@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+android:layout_height="250dp"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:layout_margin="15dp"
+    android:background="#FFFFFF"
+    android:elevation="15dp"
+    android:scaleType="centerInside"
+>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true" />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/forwardbtn"
+        android:layout_toEndOf="@id/title"
+/>
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/title"
+        android:text="Title"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DifficultyLevel"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/title"
+        android:id="@+id/difficulty"
+        android:textSize="15sp"
+        android:textColor="#656467"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Description"
+        android:id="@+id/description"
+        android:layout_below="@id/difficulty"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#79777C"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        />
+
+    <Button
+        android:id="@+id/btn"
+        android:background="#FB8C00"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="Read Online" />
+
+</RelativeLayout>
